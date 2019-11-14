@@ -14,10 +14,9 @@ public class VotanteController {
     Conexion con = new Conexion();
     JdbcTemplate jdbcTemplate = new JdbcTemplate( con.Conectar());
     ModelAndView mav = new ModelAndView();
-    int id; // declaramos el id para capturar el id_producto "idP"
   
     List candidatos, cuidad, datos1, datos2, datos3, datos4, datos5, datos6,
-         datos7, datos8, datos9, datos10, datos11, datos12; // capturaos lso datos de la listade la tabla productos
+         datos7, datos8, datos9, datos10, datos11, datos12; // asignamoms variables para las listas
    
     @RequestMapping("listaVotante.htm")
     public ModelAndView Listar(){
